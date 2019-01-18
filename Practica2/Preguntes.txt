@@ -1,0 +1,96 @@
+RAONAMENT DEL CLIPS
+
+- Nom?
+
+
+- Edat?
+
+
+- Sexe?
+
+
+- Pes?
+
+
+- Alçada?	(es dedueix d'aqui el IMC)
+
+
+- Preguntes relacionades a deduir problemes de salud
+
+	* Cardiaques: Padece o ha padecido alguna enfermedad del corazón?(yes/no) -> resposta: "no" salta a coronaries
+
+		·
+ 
+		·
+
+	
+	* Problemes de col·lesterol? (yes/no)
+
+
+	* Problemes de hipertensió? (yes/no)
+
+
+	* Problemes de diabetes? (yes/no)
+
+
+	* Problemes de osteoporosis? (yes/no)
+
+
+	* Problemes dels osos:
+		
+		· Artrosis?
+
+		· Alguna fractura? (yes/no)
+
+			· Fractura a on? (cadera/vertebres/extremitats/...)
+
+
+	* Problemes d'equilibri o caigudes freqüents? 
+
+	
+	* Problemes psicologics? (depressio)
+
+	
+	* Incontinencia urinaria o renal?
+
+
+	* Dependencia (depen d'un cuidador)
+
+
+	* Problemes musculars:
+		· Dolor en algun lloc
+
+
+	* Cancer?
+		· Tipus
+
+
+	* Problemes respiratoris?
+
+		· Fibrosi quistica...?
+
+
+	...
+
+
+
+- Preguntar sobre el nivell inicial 
+
+	* Practica esport habitualment
+
+	* FC en repos	
+
+	(De tot aixo s'assumeix nivell físic)
+
+
+
+- Preguntar disponibilitat de temps
+
+	* Quants dies setmana
+
+	* Quantes hores per dia
+
+
+
+Despres de totes aquestes preguntes, donem puntuacio a cada tipus d'exercici i intentem montar una rutina
+	

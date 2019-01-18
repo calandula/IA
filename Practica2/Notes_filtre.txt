@@ -1,0 +1,35 @@
+Factors que intervenen en la tria d'exercicis:
+
+- Nivell inicial de la persona
+- Malalties que es pateixen
+
+
+Classificació dels exercicis segons intensitat (aixo es dedueix):
+
+1) Zona d'activitat moderada => Nivell d'esforç percebut del 1 al 2 en Borg. Qui té vida sedentaria
+ha de començar en aquesta zona d'activitat, a l'igual que les persones en rehabilitacio. Serveix per a perdre
+pes i posar-se en forma. Es una activitat relaxada i lleugera.
+
+2) Zona de control de pes => La intensitat puja una mica. És molt recomanat per a persones amb sobrepes i no
+requereix grans aptituds físiques. Millora les capacitats aerobiques. Borg del <= 4
+
+3) Zona aerobica => Zona estandar d'entrenament. Si es vol augmentar la capacitat aerobica, s'ha d'estar aqui.
+En aquest punt la percepcio d'eforç ja no es agradable, tot i que no es doloros.
+Beneficis: crema de greix, afavorir l'aparell cardiorespiratori, millora de ritme cardiac.
+Borg <= 5
+
+4) Zona umbral anaerobic => Dolor. NO ES CONSIDERA
+
+5) Zona de maxima intensitat => NO ES CONSIDERA
+
+
+
+Estructura d'una sessio:
+
+- Escalfament: sempre dura 10 minuts. 5 primers minuts es fan exercicis de cardio suau (caminar, bici). Despres es fan exercicis
+d'estirament dels musculs que intervindran en els exercicis posteriors
+
+- Esforç: de 10 a 70 minuts. Si es fan diversos exercicis en aquesta fase, primer es fan exercicis amb mes velocitat, despres de força,
+i despres de resistencia
+
+- Tornada a la calma: 10 minuts. 5 cardio suau + exercicis d'estiraments

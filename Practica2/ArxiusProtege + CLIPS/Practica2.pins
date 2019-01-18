@@ -1,0 +1,1187 @@
+; Sat Dec 08 17:07:41 CET 2018
+;
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([Practica2_Class0] of  Equilibrio
+
+	(Ejercita
+		[Practica2_Class10029]
+		[Practica2_Class10027])
+	(Intensidad 3.0)
+	(Nombre_ej_eq Zancada_sujetando_una_pelota)
+	(Requiere [Practica2_Class30002]))
+
+([Practica2_Class10000] of  Material
+
+	(Tipo_material Maquina_de_remo))
+
+([Practica2_Class10008] of  Equilibrio
+
+	(Ejercita
+		[Practica2_Class10027]
+		[Practica2_Class10029])
+	(Intensidad 2.0)
+	(Nombre_ej_eq Caminar_en_zigzag))
+
+([Practica2_Class10010] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Lateralizacion_de_cuello))
+
+([Practica2_Class10011] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Diagonal_de_cuello))
+
+([Practica2_Class10012] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Flexion_de_hombros))
+
+([Practica2_Class10013] of  Flexibilidad
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10029])
+	(Intensidad 2.0)
+	(Nombre_ej_flexi Lateralizacion_de_tronco))
+
+([Practica2_Class10014] of  Flexibilidad
+
+	(Ejercita
+		[Practica2_Class10029]
+		[Practica2_Class10031]
+		[Practica2_Class10032])
+	(Intensidad 3.0)
+	(Nombre_ej_flexi Puente)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class10016] of  Musculacion
+
+	(Ejercita
+		[Practica2_Class10027]
+		[Practica2_Class10031]
+		[Practica2_Class10029])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Levantarse_de_una_silla)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class10017] of  Musculacion
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Curl_biceps_sentado)
+	(Requiere
+		[Practica2_Class12]
+		[Practica2_Class15]))
+
+([Practica2_Class10018] of  Musculacion
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Curl_biceps_de_pie)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class10019] of  Musculacion
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Extension_triceps)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class10020] of  Material
+
+	(Tipo_material Cuerda))
+
+([Practica2_Class10023] of  Material
+
+	(Tipo_material Colchoneta))
+
+([Practica2_Class10026] of  Zona_cuerpo
+
+	(Zona Brazo))
+
+([Practica2_Class10027] of  Zona_cuerpo
+
+	(Zona Pierna))
+
+([Practica2_Class10028] of  Zona_cuerpo
+
+	(Zona Cuello))
+
+([Practica2_Class10029] of  Zona_cuerpo
+
+	(Zona Cadera))
+
+([Practica2_Class10030] of  Zona_cuerpo
+
+	(Zona Hombro))
+
+([Practica2_Class10031] of  Zona_cuerpo
+
+	(Zona Espalda))
+
+([Practica2_Class10032] of  Zona_cuerpo
+
+	(Zona Abdomen))
+
+([Practica2_Class10048] of  Deporte
+
+	(Intensidad 2.0)
+	(Involucra [Practica2_Class10027])
+	(Nombre_deporte Marcha))
+
+([Practica2_Class10049] of  Deporte
+
+	(Intensidad 5.0)
+	(Involucra
+		[Practica2_Class10029]
+		[Practica2_Class10027])
+	(Nombre_deporte Footing))
+
+([Practica2_Class10050] of  Deporte
+
+	(Intensidad 4.0)
+	(Involucra
+		[Practica2_Class10032]
+		[Practica2_Class10026]
+		[Practica2_Class10029]
+		[Practica2_Class10028]
+		[Practica2_Class10031]
+		[Practica2_Class10030]
+		[Practica2_Class10027])
+	(Nombre_deporte Aquagym))
+
+([Practica2_Class10051] of  Deporte
+
+	(Intensidad 2.0)
+	(Involucra
+		[Practica2_Class10026]
+		[Practica2_Class10029])
+	(Nombre_deporte Golf))
+
+([Practica2_Class10052] of  Deporte
+
+	(Intensidad 1.0)
+	(Involucra
+		[Practica2_Class10026]
+		[Practica2_Class10031])
+	(Nombre_deporte Vela))
+
+([Practica2_Class10055] of  Deporte
+
+	(Intensidad 4.0)
+	(Involucra [Practica2_Class10027])
+	(Nombre_deporte Ciclismo))
+
+([Practica2_Class10056] of  Deporte
+
+	(Intensidad 5.0)
+	(Involucra
+		[Practica2_Class10026]
+		[Practica2_Class10029]
+		[Practica2_Class10031]
+		[Practica2_Class10030]
+		[Practica2_Class10027]
+		[Practica2_Class10032]
+		[Practica2_Class10028])
+	(Nombre_deporte Baloncesto))
+
+([Practica2_Class10057] of  Deporte
+
+	(Intensidad 4.0)
+	(Involucra
+		[Practica2_Class10032]
+		[Practica2_Class10026]
+		[Practica2_Class10029]
+		[Practica2_Class10028]
+		[Practica2_Class10031]
+		[Practica2_Class10030]
+		[Practica2_Class10027])
+	(Nombre_deporte Tenis))
+
+([Practica2_Class10060] of  Deporte
+
+	(Intensidad 1.0)
+	(Involucra [Practica2_Class10027])
+	(Nombre_deporte Tai-Chi))
+
+([Practica2_Class10061] of  Aerobico
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_aerobico Andar))
+
+([Practica2_Class10062] of  Aerobico
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_aerobico Bicicleta)
+	(Requiere [Practica2_Class8]))
+
+([Practica2_Class10063] of  Aerobico
+
+	(Ejercita
+		[Practica2_Class10032]
+		[Practica2_Class10026]
+		[Practica2_Class10028]
+		[Practica2_Class10031]
+		[Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_aerobico Nadar))
+
+([Practica2_Class10064] of  Aerobico
+
+	(Ejercita
+		[Practica2_Class10032]
+		[Practica2_Class10026]
+		[Practica2_Class10029]
+		[Practica2_Class10028]
+		[Practica2_Class10031]
+		[Practica2_Class10030]
+		[Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_aerobico Danza))
+
+([Practica2_Class10065] of  Aerobico
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_aerobico Subir_escaleras))
+
+([Practica2_Class10066] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Talon_a_pies))
+
+([Practica2_Class10067] of  Equilibrio
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10032]
+		[Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Levantarse_y_sentarse_sin_manos)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class10069] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Pata_coja_con_soporte)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class10070] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramientos_de_los_tendones_del_muslo_sentado)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class10071] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramientos_de_los_tendones_del_muslo_de_pie))
+
+([Practica2_Class10072] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_de_pantorrillas))
+
+([Practica2_Class10073] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramientos_de_tobillos)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class10074] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramientos_de_triceps)
+	(Requiere [Practica2_Class10020]))
+
+([Practica2_Class10075] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramientos_de_mu%C3%B1eca))
+
+([Practica2_Class10076] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Rotacion_de_hombros_de_pie))
+
+([Practica2_Class10077] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Rotacion_de_hombros_tumbado)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class10078] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramientos_de_los_cuadriceps_de_pie))
+
+([Practica2_Class10079] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10029])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Rotacion_doble_de_cadera_tumbado)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class10080] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10029])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Rotacion_simple_de_cadera_tumbado)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class12] of  Material
+
+	(Tipo_material Mancuernas))
+
+([Practica2_Class15] of  Material
+
+	(Tipo_material Silla))
+
+
+([Practica2_Class2] of  Deporte
+
+	(Intensidad 3.0)
+	(Involucra
+		[Practica2_Class10032]
+		[Practica2_Class10031]
+		[Practica2_Class10028]
+		[Practica2_Class10029]
+		[Practica2_Class10030])
+	(Nombre_deporte Yoga))
+
+([Practica2_Class20001] of  Musculacion
+
+	(Ejercita [Practica2_Class10032])
+	(Intensidad 3.0)
+	(Nombre_ej_musculacion Encogimientos_abdominales)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class20002] of  Deporte
+
+	(Intensidad 4.0)
+	(Involucra
+		[Practica2_Class10032]
+		[Practica2_Class10026]
+		[Practica2_Class10029]
+		[Practica2_Class10031]
+		[Practica2_Class10027])
+	(Nombre_deporte Pilates))
+
+([Practica2_Class20004] of  Equilibrio
+
+	(Ejercita
+		[Practica2_Class10028]
+		[Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Marcha_estatica_con_giro_de_cabeza)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class20006] of  Equilibrio
+
+	(Ejercita
+		[Practica2_Class10032]
+		[Practica2_Class10029]
+		[Practica2_Class10031])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Torsion_lateral_tronco))
+
+([Practica2_Class20007] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_eq Subir_y_bajar_escalon))
+
+([Practica2_Class20009] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_eq Caminar_con_un_ojo_tapado))
+
+([Practica2_Class20010] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Marcha_estatica_levantado))
+
+([Practica2_Class20013] of  Aerobico
+
+	(Ejercita
+		[Practica2_Class10032]
+		[Practica2_Class10026]
+		[Practica2_Class10029]
+		[Practica2_Class10028]
+		[Practica2_Class10031]
+		[Practica2_Class10030]
+		[Practica2_Class10027])
+	(Intensidad 4.0)
+	(Nombre_ej_aerobico Aerobic))
+
+([Practica2_Class20014] of  Aerobico
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10027])
+	(Intensidad 4.0)
+	(Nombre_ej_aerobico Patinar))
+
+([Practica2_Class20020] of  Musculacion
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10027]
+		[Practica2_Class10029])
+	(Intensidad 3.0)
+	(Nombre_ej_musculacion Flexion_perpendicular_silla)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class20021] of  Musculacion
+
+	(Ejercita [Practica2_Class10029])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Flexion_de_caderas))
+
+([Practica2_Class20022] of  Musculacion
+
+	(Ejercita [Practica2_Class10029])
+	(Intensidad 3.0)
+	(Nombre_ej_musculacion Extension_de_caderas)
+	(Requiere [Practica2_Class20033]))
+
+([Practica2_Class20023] of  Musculacion
+
+	(Ejercita [Practica2_Class10031])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Remo_sentado)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class20024] of  Musculacion
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10026])
+	(Intensidad 4.0)
+	(Nombre_ej_musculacion Flexiones_contra_pared))
+
+([Practica2_Class20025] of  Musculacion
+
+	(Ejercita
+		[Practica2_Class10030]
+		[Practica2_Class10026])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Elevaciones_laterales)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class20026] of  Musculacion
+
+	(Ejercita
+		[Practica2_Class10026]
+		[Practica2_Class10030])
+	(Intensidad 3.0)
+	(Nombre_ej_musculacion Elevaciones_frontales)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class20027] of  Musculacion
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Flexion_plantar))
+
+([Practica2_Class20028] of  Musculacion
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Extension_de_rodilla)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class20030] of  Musculacion
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Extension_de_piernas_hacia_los_lados)
+	(Requiere [Practica2_Class20033]))
+
+([Practica2_Class20031] of  Musculacion
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Press_sentado)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class20032] of  Musculacion
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10030])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Press_de_pie)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class20033] of  Material
+
+	(Tipo_material Banda_elastica))
+
+([Practica2_Class20034] of  Musculacion
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Flexion_rodilla)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class20035] of  Dolor
+
+	(Zona_dolor [Practica2_Class10032]))
+
+([Practica2_Class20036] of  Dolor
+
+	(Zona_dolor [Practica2_Class10026]))
+
+([Practica2_Class20037] of  Dolor
+
+	(Zona_dolor [Practica2_Class10029]))
+
+([Practica2_Class20038] of  Dolor
+
+	(Zona_dolor [Practica2_Class10028]))
+
+([Practica2_Class20039] of  Dolor
+
+	(Zona_dolor [Practica2_Class10031]))
+
+([Practica2_Class20040] of  Dolor
+
+	(Zona_dolor [Practica2_Class10030]))
+
+([Practica2_Class20041] of  Dolor
+
+	(Zona_dolor [Practica2_Class10027]))
+
+([Practica2_Class20042] of  Enfermedad
+
+	(Mejora_con
+		[Practica2_Class10061]
+		[Practica2_Class10062]
+		[Practica2_Class10064]
+		[Practica2_Class10063]
+		[Practica2_Class10065]
+		[Practica2_Class10050]
+		[Practica2_Class10056]
+		[Practica2_Class10049]
+		[Practica2_Class10048]
+		[Practica2_Class10057])
+	(Tipo_enf Diabetes))
+
+([Practica2_Class20043] of  Enfermedad
+
+	(Mejora_con
+		[Practica2_Class10061]
+		[Practica2_Class10062]
+		[Practica2_Class10064]
+		[Practica2_Class10063]
+		[Practica2_Class10065]
+		[Practica2_Class10008]
+		[Practica2_Class7]
+		[Practica2_Class10067]
+		[Practica2_Class5]
+		[Practica2_Class6]
+		[Practica2_Class10069]
+		[Practica2_Class10066])
+	(Tipo_enf Osteoporosis))
+
+([Practica2_Class20044] of  Enfermedad
+
+	(Mejora_con
+		[Practica2_Class10012]
+		[Practica2_Class10010]
+		[Practica2_Class10013]
+		[Practica2_Class10014]
+		[Practica2_Class10018]
+		[Practica2_Class10017]
+		[Practica2_Class20031]
+		[Practica2_Class10019]
+		[Practica2_Class20032]
+		[Practica2_Class10055]
+		[Practica2_Class10048])
+	(Tipo_enf Cardiaca))
+
+([Practica2_Class20045] of  Enfermedad
+
+	(Mejora_con
+		[Practica2_Class10050]
+		[Practica2_Class10056]
+		[Practica2_Class10055]
+		[Practica2_Class10049]
+		[Practica2_Class10048]
+		[Practica2_Class10057]
+		[Practica2_Class10061]
+		[Practica2_Class10062]
+		[Practica2_Class10064]
+		[Practica2_Class10063]
+		[Practica2_Class10065])
+	(Tipo_enf Artrosis))
+
+([Practica2_Class20046] of  Enfermedad
+
+	(Mejora_con
+		[Practica2_Class10050]
+		[Practica2_Class10056]
+		[Practica2_Class10055]
+		[Practica2_Class10049]
+		[Practica2_Class10048]
+		[Practica2_Class10057]
+		[Practica2_Class10061]
+		[Practica2_Class10062]
+		[Practica2_Class10064]
+		[Practica2_Class10063]
+		[Practica2_Class10065])
+	(Tipo_enf Coronaria))
+
+([Practica2_Class20047] of  Enfermedad
+
+	(Mejora_con
+		[Practica2_Class10050]
+		[Practica2_Class2]
+		[Practica2_Class10008]
+		[Practica2_Class7]
+		[Practica2_Class10067]
+		[Practica2_Class5]
+		[Practica2_Class6]
+		[Practica2_Class10069]
+		[Practica2_Class10066])
+	(Tipo_enf Desequilibrio))
+
+([Practica2_Class20048] of  Enfermedad
+
+	(Mejora_con
+		[Practica2_Class10061]
+		[Practica2_Class10062]
+		[Practica2_Class10064]
+		[Practica2_Class10063]
+		[Practica2_Class10065])
+	(Tipo_enf Fragilidad))
+
+([Practica2_Class20049] of  Enfermedad
+
+	(Mejora_con
+		[Practica2_Class10008]
+		[Practica2_Class7]
+		[Practica2_Class10067]
+		[Practica2_Class5]
+		[Practica2_Class6]
+		[Practica2_Class10069]
+		[Practica2_Class10066])
+	(Tipo_enf Incontinencia))
+
+([Practica2_Class20050] of  Enfermedad
+
+	(Mejora_con
+		[Practica2_Class10061]
+		[Practica2_Class10062]
+		[Practica2_Class10064]
+		[Practica2_Class10063]
+		[Practica2_Class10065])
+	(Tipo_enf Insuficiencia))
+
+([Practica2_Class20051] of  Psicologico
+
+	(Mejora_con
+		[Practica2_Class10050]
+		[Practica2_Class10051]
+		[Practica2_Class10060]
+		[Practica2_Class2])
+	(Tipo_psico Ansiedad))
+
+([Practica2_Class20052] of  Psicologico
+
+	(Mejora_con
+		[Practica2_Class10050]
+		[Practica2_Class10056]
+		[Practica2_Class10055]
+		[Practica2_Class10049]
+		[Practica2_Class10051]
+		[Practica2_Class10048]
+		[Practica2_Class10060]
+		[Practica2_Class10057]
+		[Practica2_Class10052]
+		[Practica2_Class2]
+		[Practica2_Class10061]
+		[Practica2_Class10062]
+		[Practica2_Class10064])
+	(Tipo_psico Depresion))
+
+([Practica2_Class20053] of  Psicologico
+
+	(Mejora_con
+		[Practica2_Class10060]
+		[Practica2_Class10052]
+		[Practica2_Class2])
+	(Tipo_psico Insomnio))
+
+([Practica2_Class30001] of  Aerobico
+
+	(Ejercita
+		[Practica2_Class10026]
+		[Practica2_Class10031]
+		[Practica2_Class10030])
+	(Intensidad 1.0)
+	(Nombre_ej_aerobico Remo)
+	(Requiere [Practica2_Class10000]))
+
+([Practica2_Class30002] of  Material
+
+	(Tipo_material Pelota))
+
+([Practica2_Class30003] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_eq Pata_coja_con_soporte_sobre_superficie_blanda)
+	(Requiere
+		[Practica2_Class10023]
+		[Practica2_Class15]))
+
+([Practica2_Class30004] of  Equilibrio
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_eq Levantar_brazo_con_pierna_opuesta))
+
+([Practica2_Class30005] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_eq Patadas_traseras_sobre_una_pierna))
+
+([Practica2_Class30006] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_eq Patadas_frontales_sobre_una_pierna))
+
+([Practica2_Class30007] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 3.0)
+	(Nombre_ej_eq Andar_en_puntillas))
+
+([Practica2_Class30008] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Andar_con_un_libro_en_la_cabeza)
+	(Requiere [Practica2_Class30009]))
+
+([Practica2_Class30009] of  Material
+
+	(Tipo_material Libro))
+
+([Practica2_Class30010] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Andar_levantando_las_rodillas))
+
+([Practica2_Class30012] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10032])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Elevacion_de_manos_entrelazadas_hacia_los_lados))
+
+([Practica2_Class30013] of  Flexibilidad
+
+	(Ejercita
+		[Practica2_Class10032]
+		[Practica2_Class10031])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Brazos_al_cielo))
+
+([Practica2_Class30014] of  Flexibilidad
+
+	(Ejercita
+		[Practica2_Class10032]
+		[Practica2_Class10031])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Elongacion_lateral))
+
+([Practica2_Class30015] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10031])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Piernas_hacia_el_pecho_tumbado)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class30016] of  Musculacion
+
+	(Ejercita [Practica2_Class10032])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Plancha_cuatro_apoyos)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class30017] of  Musculacion
+
+	(Ejercita [Practica2_Class10032])
+	(Intensidad 3.0)
+	(Nombre_ej_musculacion Tijeras_abdominales)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40002] of  Material
+
+	(Tipo_material Maquina_eliptica))
+
+([Practica2_Class40003] of  Aerobico
+
+	(Ejercita
+		[Practica2_Class10032]
+		[Practica2_Class10026]
+		[Practica2_Class10029]
+		[Practica2_Class10028]
+		[Practica2_Class10031]
+		[Practica2_Class10030]
+		[Practica2_Class10027])
+	(Intensidad 4.0)
+	(Nombre_ej_aerobico Zumba))
+
+([Practica2_Class40004] of  Aerobico
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_aerobico Eliptica)
+	(Requiere [Practica2_Class40002]))
+
+([Practica2_Class40005] of  Equilibrio
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Levantamiento_de_brazos_sentado)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class40006] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Caminar_sobre_los_talones))
+
+([Practica2_Class40007] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 1.0)
+	(Nombre_ej_eq Balanceo_del_pie))
+
+([Practica2_Class40008] of  Flexibilidad
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10029])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_piriforme)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40009] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10031])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_total_de_espalda)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40010] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estirar_brazo_tras_nuca))
+
+([Practica2_Class40011] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_paralelo_brazo))
+
+([Practica2_Class40012] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Cruce_de_brazos_por_detras_del_cuerpo))
+
+([Practica2_Class40013] of  Flexibilidad
+
+	(Ejercita
+		[Practica2_Class10032]
+		[Practica2_Class10031])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Torsion_lateral_hacia_abajo))
+
+([Practica2_Class40014] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10032])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_del_recto_abdominal)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40015] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_de_protraccion_del_cuello))
+
+([Practica2_Class40016] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Extension_del_cuello))
+
+([Practica2_Class40017] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Flexion_delantera_del_cuello))
+
+([Practica2_Class40018] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_de_hombro_con_brazo_doblado))
+
+([Practica2_Class40019] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramientos_de_hombros_en_envoltura))
+
+([Practica2_Class40020] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_cruzado))
+
+([Practica2_Class40021] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_del_hombro_tocando_atras))
+
+([Practica2_Class40022] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_L_invertida)
+	(Requiere [Practica2_Class20033]))
+
+([Practica2_Class40023] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10029])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_de_gluteo_piramidal_con_apoyo)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40024] of  Flexibilidad
+
+	(Ejercita [Practica2_Class10029])
+	(Intensidad 1.0)
+	(Nombre_ej_flexi Estiramiento_de_cadera_con_rotacion_sentado)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40025] of  Musculacion
+
+	(Ejercita [Practica2_Class10032])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Crunch_piernas_elevadas)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40026] of  Musculacion
+
+	(Ejercita [Practica2_Class10032])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Elevacion_de_piernas)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40027] of  Musculacion
+
+	(Ejercita [Practica2_Class10032])
+	(Intensidad 3.0)
+	(Nombre_ej_musculacion Plancha_con_fitball)
+	(Requiere
+		[Practica2_Class10023]
+		[Practica2_Class30002]))
+
+([Practica2_Class40028] of  Musculacion
+
+	(Ejercita [Practica2_Class10031])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Remo_con_mancuerna)
+	(Requiere
+		[Practica2_Class12]
+		[Practica2_Class15]))
+
+([Practica2_Class40029] of  Musculacion
+
+	(Ejercita
+		[Practica2_Class10030]
+		[Practica2_Class10031])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Encogimiento_de_hombros)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class40030] of  Musculacion
+
+	(Ejercita [Practica2_Class10031])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Superman)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40032] of  Musculacion
+
+	(Ejercita [Practica2_Class10029])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Estabilizador_lumbar)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40033] of  Musculacion
+
+	(Ejercita [Practica2_Class10029])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Patada_de_flex)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40034] of  Musculacion
+
+	(Ejercita [Practica2_Class10029])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Elevacion_de_caderas)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40035] of  Material
+
+	(Tipo_material Disco))
+
+([Practica2_Class40036] of  Musculacion
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Elevaciones_boca_arriba_con_disco)
+	(Requiere
+		[Practica2_Class40035]
+		[Practica2_Class15]))
+
+([Practica2_Class40037] of  Musculacion
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Elevaciones_boca_abajo_con_disco)
+	(Requiere
+		[Practica2_Class40035]
+		[Practica2_Class15]))
+
+([Practica2_Class40038] of  Musculacion
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Isometrico_hacia_los_lados))
+
+([Practica2_Class40039] of  Musculacion
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 1.0)
+	(Nombre_ej_musculacion Isometrico_hacia_delante_y_atras))
+
+([Practica2_Class40040] of  Musculacion
+
+	(Ejercita [Practica2_Class10028])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Face_pull)
+	(Requiere [Practica2_Class20033]))
+
+([Practica2_Class40041] of  Musculacion
+
+	(Ejercita [Practica2_Class10026])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Curl_martillo)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class40042] of  Musculacion
+
+	(Ejercita [Practica2_Class10031])
+	(Intensidad 3.0)
+	(Nombre_ej_musculacion Pullover)
+	(Requiere
+		[Practica2_Class12]
+		[Practica2_Class15]))
+
+([Practica2_Class40043] of  Musculacion
+
+	(Ejercita [Practica2_Class10031])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Hiperextensiones_lumbares)
+	(Requiere [Practica2_Class10023]))
+
+([Practica2_Class40044] of  Musculacion
+
+	(Ejercita [Practica2_Class10031])
+	(Intensidad 4.0)
+	(Nombre_ej_musculacion Peso_muerto_con_piernas_rectas)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class40045] of  Musculacion
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 2.0)
+	(Nombre_ej_musculacion Remo_vertical)
+	(Requiere [Practica2_Class12]))
+
+([Practica2_Class40046] of  Musculacion
+
+	(Ejercita [Practica2_Class10030])
+	(Intensidad 3.0)
+	(Nombre_ej_musculacion Pajaros_sentado)
+	(Requiere
+		[Practica2_Class12]
+		[Practica2_Class15]))
+
+([Practica2_Class5] of  Equilibrio
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10027]
+		[Practica2_Class10029])
+	(Intensidad 2.0)
+	(Nombre_ej_eq Pararse_de_puntillas))
+
+([Practica2_Class6] of  Equilibrio
+
+	(Ejercita
+		[Practica2_Class10031]
+		[Practica2_Class10029]
+		[Practica2_Class10027])
+	(Intensidad 3.0)
+	(Nombre_ej_eq Paso_lateral_lado_a_lado))
+
+([Practica2_Class7] of  Equilibrio
+
+	(Ejercita [Practica2_Class10027])
+	(Intensidad 2.0)
+	(Nombre_ej_eq Caminata_sentado)
+	(Requiere [Practica2_Class15]))
+
+([Practica2_Class8] of  Material
+
+	(Tipo_material Bicicleta))

@@ -1,0 +1,71 @@
+(define (problem Ejemplo1) (:domain Dominio_basico)
+(:objects
+  B0 B1 B2 B3 B4 B5 - base
+  R0 R1 R2 - rover
+  S1 S2 S3 S4 S5 S6 S7 S8 S9 - slot
+)
+
+(:init
+  (basesConectadas B0 B1)
+  (basesConectadas B1 B0)
+  (basesConectadas B1 B2)
+  (basesConectadas B2 B1)
+  (basesConectadas B2 B3)
+  (basesConectadas B3 B2)
+  (basesConectadas B3 B4)
+  (basesConectadas B4 B3)
+  (basesConectadas B4 B5)
+  (basesConectadas B5 B4)
+
+
+  (enBase R0 B0)
+  (enBase R1 B2)
+  (enBase R2 B5)
+
+  (= (personasEnBase B0) 2)
+  (= (personasEnBase B1) 1)
+  (= (personasEnBase B2) 0)
+  (= (personasEnBase B3) 0)
+  (= (personasEnBase B4) 4)
+  (= (personasEnBase B5) 0)
+  (= (suministrosEnBase B0) 0)
+  (= (suministrosEnBase B1) 0)
+  (= (suministrosEnBase B2) 3)
+  (= (suministrosEnBase B3) 3)
+  (= (suministrosEnBase B4) 0)
+  (= (suministrosEnBase B5) 3)
+  (= (recursosDisponibles) 16)
+
+  (= (contieneRoverPersonas R0) 0)
+  (= (contieneRoverPersonas R1) 0)
+  (= (contieneRoverPersonas R2) 0)
+  (= (contieneRoverSuministros R0) 0)
+  (= (contieneRoverSuministros R1) 0)
+  (= (contieneRoverSuministros R2) 0)
+
+  (peticionPersonal S1)
+  (destinoPeticion S1 B1)
+  (peticionPersonal S2)
+  (destinoPeticion S2 B0)
+  (peticionPersonal S3)
+  (destinoPeticion S3 B1)
+  (peticionSuministro S4)
+  (destinoPeticion S4 B0)
+  (peticionSuministro S5)
+  (destinoPeticion S5 B1)
+  (peticionSuministro S6)
+  (destinoPeticion S6 B1)
+  (peticionPersonal S7)
+  (destinoPeticion S7 B0)
+  (peticionPersonal S8)
+  (destinoPeticion S8 B4)
+  (peticionPersonal S9)
+  (destinoPeticion S9 B4)
+)
+
+(:goal (or
+  (forall (?S - slot) (peticionCumplida ?S))
+  (= (recursosDisponibles) 0)
+)
+)
+)

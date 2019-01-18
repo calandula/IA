@@ -1,0 +1,549 @@
+; Sat Dec 08 17:07:41 CET 2018
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot Nombre_ej_brazo
+		(type SYMBOL)
+		(allowed-values Curl_biceps_sentado Extension_triceps Levantarse_de_una_silla)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Intensidad
+		(type FLOAT)
+		(range 0.0 10.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Tiene
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio Deporte)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_cadera
+		(type SYMBOL)
+		(allowed-values Flexion_de_caderas Extension_de_caderas)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot NombreAct
+		(type STRING)
+;+		(value "Caminar" "Nadar" "Bailar" "Bicicleta")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Practica2_Class1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Impide
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_eq
+		(type SYMBOL)
+		(allowed-values Talon_a_pies Levantarse_y_sentarse_sin_manos Pata_coja_con_soporte Pararse_de_puntillas Caminar_en_zigzag Paso_lateral_lado_a_lado Caminata_sentado Torsion_lateral_tronco Subir_y_bajar_escalon Caminar_con_un_ojo_tapado Marcha_estatica_levantado Marcha_estatica_con_giro_de_cabeza Zancada_sujetando_una_pelota Pata_coja_con_soporte_sobre_superficie_blanda Levantar_brazo_con_pierna_opuesta Patadas_traseras_sobre_una_pierna Patadas_frontales_sobre_una_pierna Andar_en_puntillas Andar_con_un_libro_en_la_cabeza Andar_levantando_las_rodillas Levantamiento_de_brazos_sentado Caminar_sobre_los_talones Balanceo_del_pie)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Requiere
+		(type INSTANCE)
+;+		(allowed-classes Material)
+		(create-accessor read-write))
+	(multislot aaaaaaaaaaa
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio Deporte)
+		(create-accessor read-write))
+	(single-slot Mejora
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio Deporte)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Duracion_etapa
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Zona
+		(type SYMBOL)
+		(allowed-values Brazo Pierna Cuello Cadera Hombro Espalda Abdomen)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_pierna
+		(type SYMBOL)
+		(allowed-values Flexion_plantar Flexion_de_rodilla Extension_de_rodilla Elevacion_de_piernas_hacia_los_lados)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Tiempo
+;+		(comment "en minutos")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot S_etapa
+		(type SYMBOL)
+;+		(allowed-parents)
+		(cardinality 3 3)
+		(create-accessor read-write))
+	(single-slot Repeticiones
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Padece
+		(type INSTANCE)
+;+		(allowed-classes Sintoma)
+		(create-accessor read-write))
+	(single-slot Practica2_Class10047
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_pecho
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Sustituido_por
+		(type SYMBOL)
+;+		(allowed-parents)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Sigue_con
+		(type INSTANCE)
+;+		(allowed-classes Nucleo)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Tipo_psico
+		(type SYMBOL)
+		(allowed-values Ansiedad Depresion Insomnio)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Empieza_con
+		(type INSTANCE)
+;+		(allowed-classes Calentamiento)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Partes_cuerpo
+		(type STRING)
+;+		(value "Brazos" "Piernas" "Cuello" "Espalda" "Abdomen" "Pecho" "Hombros")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Tipo_material
+		(type SYMBOL)
+		(allowed-values Mancuernas Silla Cuerda Colchoneta Banda_elastica Bicicleta Pelota Libro Maquina_de_remo Maquina_eliptica Disco)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot E_ejercicio
+		(type SYMBOL)
+;+		(allowed-parents Ejercicio)
+		(create-accessor read-write))
+	(single-slot Estira
+		(type INSTANCE)
+;+		(allowed-classes Zona_cuerpo)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Practica2_Class20015
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot plplplplp
+		(type SYMBOL)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_persona
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot aaaaaaaaaaaaaa
+		(type SYMBOL)
+		(allowed-values Equilibrio Flexibilidad Musculacion Aerobico Deporte)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Series
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Tipo_enf
+		(type SYMBOL)
+		(allowed-values Diabetes Osteoporosis Cardiaca Artrosis Coronaria Desequilibrio Fragilidad Incontinencia Insuficiencia)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Sustituye
+		(type SYMBOL)
+;+		(allowed-parents Ejercicio)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Termina_con
+		(type INSTANCE)
+;+		(allowed-classes Vuelta_reposo)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Nombre_sintoma
+		(type STRING)
+;+		(value "Hipertension" "Colesterol" "Desequilibrio" "Fragilidad" "Depresion" "Incontinencia")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_deporte
+		(type SYMBOL)
+		(allowed-values Marcha Footing Aquagym Golf Vela Ciclismo Baloncesto Tenis Tai-Chi Petanca Yoga Pilates)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_flexi
+		(type SYMBOL)
+		(allowed-values Estiramientos_de_los_tendones_del_muslo_sentado Estiramientos_de_los_tendones_del_muslo_de_pie Estiramiento_de_pantorrillas Estiramientos_de_tobillos Estiramientos_de_triceps Estiramientos_de_mu%C3%B1eca Rotacion_de_hombros_de_pie Estiramientos_de_los_cuadriceps_de_pie Rotacion_doble_de_cadera_tumbado Rotacion_simple_de_cadera_tumbado Rotacion_de_hombros_tumbado Lateralizacion_de_cuello Diagonal_de_cuello Flexion_de_hombros Lateralizacion_de_tronco Puente Abdominales Elevacion_de_manos_entrelazadas_hacia_los_lados Brazos_al_cielo Elongacion_lateral Piernas_hacia_el_pecho_tumbado Estiramiento_piriforme Estiramiento_total_de_espalda Estirar_brazo_tras_nuca Estiramiento_paralelo_brazo Cruce_de_brazos_por_detras_del_cuerpo Torsion_lateral_hacia_abajo Estiramiento_del_recto_abdominal Estiramiento_de_protraccion_del_cuello Extension_del_cuello Flexion_delantera_del_cuello Estiramiento_de_hombro_con_brazo_doblado Estiramientos_de_hombros_en_envoltura Estiramiento_cruzado Estiramiento_del_hombro_tocando_atras Estiramiento_L_invertida Estiramiento_de_gluteo_piramidal_con_apoyo Estiramiento_de_cadera_con_rotacion_sentado)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Duracion
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot P_sesion
+		(type SYMBOL)
+;+		(allowed-parents)
+		(cardinality 3 7)
+		(create-accessor read-write))
+	(single-slot Peso
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_abdomen
+		(type SYMBOL)
+		(allowed-values Levantarse_de_una_silla)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Mejora_con
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio Deporte)
+		(create-accessor read-write))
+	(single-slot Practica2_Class10001
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Formado_por
+		(type INSTANCE)
+;+		(allowed-classes Sesion)
+		(cardinality 3 7)
+		(create-accessor read-write))
+	(single-slot Practica2_Class10004
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Practica2_Class10007
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Altura
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Edad
+		(type INTEGER)
+		(range 65 150)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Involucra
+		(type INSTANCE)
+;+		(allowed-classes Zona_cuerpo)
+		(create-accessor read-write))
+	(single-slot Duracion_sesion
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Compuesto_por
+		(type INSTANCE)
+;+		(allowed-classes Entrenamiento)
+		(create-accessor read-write))
+	(single-slot Practica2_Class10036
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Zona_dolor
+		(type INSTANCE)
+;+		(allowed-classes Zona_cuerpo)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Ejercita
+		(type INSTANCE)
+;+		(allowed-classes Zona_cuerpo)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_espalda
+		(type SYMBOL)
+		(allowed-values Remo_sentado Flexiones_contra_pared)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_hombro
+		(type SYMBOL)
+		(allowed-values Elevaciones_laterales Elevaciones_frontales)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot EjercicioRec
+		(type SYMBOL)
+;+		(allowed-parents Ejercicio)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot Nivel
+		(type SYMBOL)
+		(allowed-values Sedentario Activo Muy_activo)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot lmknk
+		(type SYMBOL)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_musculacion
+		(type SYMBOL)
+		(allowed-values Levantarse_de_una_silla Curl_biceps_sentado Curl_biceps_de_pie Extension_triceps Flexion_perpendicular_silla Flexion_de_caderas Extension_de_caderas Remo_sentado Flexiones_contra_pared Elevaciones_laterales Elevaciones_frontales Flexion_plantar Flexion_rodilla Extension_de_rodilla Extension_de_piernas_hacia_los_lados Press_sentado Press_de_pie Encogimientos_abdominales Plancha_cuatro_apoyos Tijeras_abdominales Crunch_piernas_elevadas Elevacion_de_piernas Plancha_con_fitball Remo_con_mancuerna Encogimiento_de_hombros Superman Estabilizador_lumbar Patada_de_flex Elevacion_de_caderas Elevaciones_boca_arriba_con_disco Elevaciones_boca_abajo_con_disco Isometrico_hacia_los_lados Isometrico_hacia_delante_y_atras Face_pull Curl_martillo Pullover Hiperextensiones_lumbares Peso_muerto_con_piernas_rectas Remo_vertical Pajaros_sentado)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_ej_aerobico
+		(type SYMBOL)
+		(allowed-values Andar Bicicleta Nadar Danza Subir_escaleras Aerobic Patinar Remo Zumba Eliptica)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nnnnnnssssssssss
+		(type SYMBOL)
+		(allowed-values Equilibrio)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot dia
+		(type STRING)
+;+		(value "Lunes" "Martes" "Miercoles" "Jueves" "Viernes" "Sabado" "Domingo")
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot zzzzzzzzzzzz
+		(type SYMBOL)
+		(allowed-values Equilibrio Aerobico Flexibilidad Musculacion Deporte)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Persona
+	(is-a USER)
+	(role concrete)
+	(single-slot Edad
+		(type INTEGER)
+		(range 65 150)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_persona
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Altura
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Padece
+		(type INSTANCE)
+;+		(allowed-classes Sintoma)
+		(create-accessor read-write))
+	(single-slot Peso
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nivel
+		(type SYMBOL)
+		(allowed-values Sedentario Activo Muy_activo)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Zona_cuerpo
+	(is-a USER)
+	(role concrete)
+	(single-slot Zona
+		(type SYMBOL)
+		(allowed-values Brazo Pierna Cuello Cadera Hombro Espalda Abdomen)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Ejercicio
+	(is-a USER)
+	(role concrete)
+	(single-slot Intensidad
+		(type FLOAT)
+		(range 0.0 10.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Requiere
+		(type INSTANCE)
+;+		(allowed-classes Material)
+		(create-accessor read-write))
+	(multislot Ejercita
+		(type INSTANCE)
+;+		(allowed-classes Zona_cuerpo)
+		(create-accessor read-write)))
+
+(defclass Aerobico
+	(is-a Ejercicio)
+	(role concrete)
+	(single-slot Nombre_ej_aerobico
+		(type SYMBOL)
+		(allowed-values Andar Bicicleta Nadar Danza Subir_escaleras Aerobic Patinar Remo Zumba Eliptica)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Musculacion
+	(is-a Ejercicio)
+	(role concrete)
+	(single-slot Nombre_ej_musculacion
+		(type SYMBOL)
+		(allowed-values Levantarse_de_una_silla Curl_biceps_sentado Curl_biceps_de_pie Extension_triceps Flexion_perpendicular_silla Flexion_de_caderas Extension_de_caderas Remo_sentado Flexiones_contra_pared Elevaciones_laterales Elevaciones_frontales Flexion_plantar Flexion_rodilla Extension_de_rodilla Extension_de_piernas_hacia_los_lados Press_sentado Press_de_pie Encogimientos_abdominales Plancha_cuatro_apoyos Tijeras_abdominales Crunch_piernas_elevadas Elevacion_de_piernas Plancha_con_fitball Remo_con_mancuerna Encogimiento_de_hombros Superman Estabilizador_lumbar Patada_de_flex Elevacion_de_caderas Elevaciones_boca_arriba_con_disco Elevaciones_boca_abajo_con_disco Isometrico_hacia_los_lados Isometrico_hacia_delante_y_atras Face_pull Curl_martillo Pullover Hiperextensiones_lumbares Peso_muerto_con_piernas_rectas Remo_vertical Pajaros_sentado)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Equilibrio
+	(is-a Ejercicio)
+	(role concrete)
+	(single-slot Nombre_ej_eq
+		(type SYMBOL)
+		(allowed-values Talon_a_pies Levantarse_y_sentarse_sin_manos Pata_coja_con_soporte Pararse_de_puntillas Caminar_en_zigzag Paso_lateral_lado_a_lado Caminata_sentado Torsion_lateral_tronco Subir_y_bajar_escalon Caminar_con_un_ojo_tapado Marcha_estatica_levantado Marcha_estatica_con_giro_de_cabeza Zancada_sujetando_una_pelota Pata_coja_con_soporte_sobre_superficie_blanda Levantar_brazo_con_pierna_opuesta Patadas_traseras_sobre_una_pierna Patadas_frontales_sobre_una_pierna Andar_en_puntillas Andar_con_un_libro_en_la_cabeza Andar_levantando_las_rodillas Levantamiento_de_brazos_sentado Caminar_sobre_los_talones Balanceo_del_pie)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Flexibilidad
+	(is-a Ejercicio)
+	(role concrete)
+	(single-slot Nombre_ej_flexi
+		(type SYMBOL)
+		(allowed-values Estiramientos_de_los_tendones_del_muslo_sentado Estiramientos_de_los_tendones_del_muslo_de_pie Estiramiento_de_pantorrillas Estiramientos_de_tobillos Estiramientos_de_triceps Estiramientos_de_mu%C3%B1eca Rotacion_de_hombros_de_pie Estiramientos_de_los_cuadriceps_de_pie Rotacion_doble_de_cadera_tumbado Rotacion_simple_de_cadera_tumbado Rotacion_de_hombros_tumbado Lateralizacion_de_cuello Diagonal_de_cuello Flexion_de_hombros Lateralizacion_de_tronco Puente Abdominales Elevacion_de_manos_entrelazadas_hacia_los_lados Brazos_al_cielo Elongacion_lateral Piernas_hacia_el_pecho_tumbado Estiramiento_piriforme Estiramiento_total_de_espalda Estirar_brazo_tras_nuca Estiramiento_paralelo_brazo Cruce_de_brazos_por_detras_del_cuerpo Torsion_lateral_hacia_abajo Estiramiento_del_recto_abdominal Estiramiento_de_protraccion_del_cuello Extension_del_cuello Flexion_delantera_del_cuello Estiramiento_de_hombro_con_brazo_doblado Estiramientos_de_hombros_en_envoltura Estiramiento_cruzado Estiramiento_del_hombro_tocando_atras Estiramiento_L_invertida Estiramiento_de_gluteo_piramidal_con_apoyo Estiramiento_de_cadera_con_rotacion_sentado)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Sintoma
+	(is-a USER)
+	(role concrete)
+	(multislot Mejora_con
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio Deporte)
+		(create-accessor read-write)))
+
+(defclass Dolor
+	(is-a Sintoma)
+	(role concrete)
+	(single-slot Zona_dolor
+		(type INSTANCE)
+;+		(allowed-classes Zona_cuerpo)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Psicologico
+	(is-a Sintoma)
+	(role concrete)
+	(single-slot Tipo_psico
+		(type SYMBOL)
+		(allowed-values Ansiedad Depresion Insomnio)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Enfermedad
+	(is-a Sintoma)
+	(role concrete)
+	(single-slot Tipo_enf
+		(type SYMBOL)
+		(allowed-values Diabetes Osteoporosis Cardiaca Artrosis Coronaria Desequilibrio Fragilidad Incontinencia Insuficiencia)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Material
+	(is-a USER)
+	(role concrete)
+	(single-slot Tipo_material
+		(type SYMBOL)
+		(allowed-values Mancuernas Silla Cuerda Colchoneta Banda_elastica Bicicleta Pelota Libro Maquina_de_remo Maquina_eliptica Disco)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Deporte
+	(is-a USER)
+	(role concrete)
+	(multislot Involucra
+		(type INSTANCE)
+;+		(allowed-classes Zona_cuerpo)
+		(create-accessor read-write))
+	(single-slot Intensidad
+		(type FLOAT)
+		(range 0.0 10.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre_deporte
+		(type SYMBOL)
+		(allowed-values Marcha Footing Aquagym Golf Vela Ciclismo Baloncesto Tenis Tai-Chi Petanca Yoga Pilates)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Sesion
+	(is-a USER)
+	(role concrete)
+	(single-slot Empieza_con
+		(type INSTANCE)
+;+		(allowed-classes Calentamiento)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Duracion_sesion
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Termina_con
+		(type INSTANCE)
+;+		(allowed-classes Vuelta_reposo)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Sigue_con
+		(type INSTANCE)
+;+		(allowed-classes Nucleo)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Etapa
+	(is-a USER)
+	(role concrete)
+	(multislot Compuesto_por
+		(type INSTANCE)
+;+		(allowed-classes Entrenamiento)
+		(create-accessor read-write))
+	(single-slot Duracion_etapa
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Calentamiento
+	(is-a Etapa)
+	(role concrete))
+
+(defclass Nucleo
+	(is-a Etapa)
+	(role concrete))
+
+(defclass Vuelta_reposo
+	(is-a Etapa)
+	(role concrete))
+
+(defclass Entrenamiento
+	(is-a USER)
+	(role concrete)
+	(single-slot Repeticiones
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Tiempo
+;+		(comment "en minutos")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Series
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Tiene
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio Deporte)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Programa
+	(is-a USER)
+	(role concrete)
+	(multislot Formado_por
+		(type INSTANCE)
+;+		(allowed-classes Sesion)
+		(cardinality 3 7)
+		(create-accessor read-write)))
